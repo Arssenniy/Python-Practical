@@ -1,0 +1,21 @@
+class Car:
+    def __init__(self, brand, model, year):
+        self.brand = brand
+        self.model = model
+        self.year = year
+
+
+    def info(self):
+        print(f"{self.brand} {self.model} - {self.year}")
+
+
+    def set_year(self, new_year):
+        self.year = new_year
+
+
+car1 = Car("Toyota", "Camry", 2020)
+car1.info()
+
+car1.set_year(2022)
+car1.info()
+       
