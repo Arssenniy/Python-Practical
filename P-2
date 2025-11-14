@@ -1,0 +1,6 @@
+name = input("Name file:")
+
+try:
+   print(open(name).read())
+except:
+    print("Error")
