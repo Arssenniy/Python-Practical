@@ -1,0 +1,12 @@
+temp = int(input("Enter the temperature:"))
+ed = str(input("Enter the unit of measurement (C/F):"))
+
+try:
+    if ed == "C":
+        print("Temperature in F:", (9/5) * temp + 32)
+    elif ed == "F":
+        print("Temperature in C:", (temp-32) * 5/9)
+    else: 
+        print("Not unit the measurement")
+except: 
+    print("error the program")
