@@ -1,0 +1,6 @@
+def greet(name):
+    name = input('Привет')
+    print('Привет', name, '!')
+
+    
+greet(print)
