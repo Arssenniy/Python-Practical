@@ -1,0 +1,10 @@
+def power(base, exponent=2):
+    base = int(input("Введите число: "))
+    exponent = int(input("Введите степень: "))
+if(exponent == ""):
+print(base^2)
+else:
+    print(base^exponent)
+
+
+power(print)
