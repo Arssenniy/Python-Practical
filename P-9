@@ -1,0 +1,9 @@
+def multiply(a, b):
+    return a * b
+
+
+
+
+import my_math
+
+print(my_math.multiply(4, 7))
