@@ -1,0 +1,21 @@
+class Bank:
+    def __init__(self):
+        self.accounts = {}
+    
+    def add_client(self, name):
+        self.accounts[name] = 0
+    
+    def deposit(self, name, amount):
+        if name in self.accounts:
+            self.accounts[name] += amount
+    
+    def withdraw(self, name, amount):
+        if name in self.accounts and self.accounts[name] >= amount:
+            self.accounts[name] -= amount
+
+# Использование
+bank = Bank()
+bank.add_client("Иван")
+bank.deposit("Иван", 1000)
+bank.withdraw("Иван", 500)
+print(bank.accounts
