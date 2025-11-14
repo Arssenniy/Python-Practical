@@ -1,0 +1,19 @@
+class Book:
+    def __init__(self, title, author, pages):
+        self.title = title
+        self.author = author
+        self.pages = pages
+    
+    def info(self):
+        print(f"Название: {self.title}")
+        print(f"Автор: {self.author}")
+        print(f"Страниц: {self.pages}")
+    
+    def change_pages(self, new_pages):
+        self.pages = new_pages
+
+# Использование
+book = Book("Война и мир", "Толстой", 1000)
+book.info()
+book.change_pages(1200)
+book.info()
