@@ -1,0 +1,12 @@
+try:
+    num1 = int(input("Введите первое число: "))
+    num2 = int(input("Введите второе число: "))
+    
+    start = min(num1, num2)
+    end = max(num1, num2)
+    
+    numbers = list(range(start, end + 1))
+    print(numbers)
+    
+except ValueError:
+    print("Ошибка: нужно ввести целые числа")
